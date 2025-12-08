@@ -1,73 +1,281 @@
-# Welcome to your Lovable project
+📘 Doctor Portal – Frontend Assignment
 
-## Project info
+A fully responsive, modern, and feature-rich Doctor Portal built using React + TypeScript + Tailwind + ShadCN UI, based on the provided Figma design and assignment requirements.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+This project implements all 10 required pages, uses a clean component architecture, includes dummy medical data, supports navigation, modals, SEO titles, and offers a polished UI/UX suitable for real-world healthcare applications.
 
-## How can I edit this code?
+🚀 Live Demo
 
-There are several ways of editing your application.
+(Replace with your deployed Vercel link)
 
-**Use Lovable**
+👉 https://your-project.vercel.app
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+📂 Repository Structure
+src/
+ ├── components/
+ │     ├── ui/ (buttons, inputs, cards, dialog, etc.)
+ │     ├── Sidebar.tsx
+ │     ├── Topbar.tsx
+ │     ├── ChatBubble.tsx
+ │     └── AppointmentCard.tsx
+ ├── pages/
+ │     ├── Login.tsx
+ │     ├── Dashboard.tsx
+ │     ├── Appointments.tsx
+ │     ├── AppointmentDetail.tsx
+ │     ├── Patients.tsx
+ │     ├── PatientProfile.tsx
+ │     ├── Consultation.tsx
+ │     ├── Prescriptions.tsx
+ │     ├── Messages.tsx
+ │     └── Settings.tsx
+ ├── data/
+ │     ├── patients.ts
+ │     ├── appointments.ts
+ │     ├── consultations.ts
+ │     ├── prescriptions.ts
+ │     ├── messages.ts
+ │     └── index.ts
+ ├── routes/
+ │     └── AppRoutes.tsx
+ ├── App.tsx
+ └── main.tsx
 
-Changes made via Lovable will be committed automatically to this repo.
+🧩 Features Implemented
+✔ All 10 required pages
 
-**Use your preferred IDE**
+Login
+Dashboard
+Appointments
+Appointment Details
+Patients
+Patient Profile
+Consultation
+Prescriptions
+Messages
+Settings
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+🧠 Key Functionalities
+🏥 Dashboard
+Today’s appointments
+Patient statistics
+Earnings card
+Quick actions
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+Fully responsive design
 
-Follow these steps:
+📅 Appointments & Details
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+List + search + filter
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+Status badges (Upcoming, Completed, In Progress)
 
-# Step 3: Install the necessary dependencies.
-npm i
+Appointment detail panel
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+Patient info + history
+
+👤 Patient Profile
+
+Demographics
+
+Medical history
+
+Allergies, conditions
+
+Appointment history
+
+Documents section
+
+Tabs: Overview / Appointments / Documents
+
+📝 Consultation Page (Advanced)
+
+Fully implemented SOAP notes
+
+Vitals input (BP, HR, Temp, etc.)
+
+Prescription creation modal
+
+Save Draft → localStorage
+
+Restore Draft → auto load
+
+Submit Consultation
+
+Keyboard shortcuts
+
+Ctrl/Cmd + S → Save Draft
+
+Ctrl/Cmd + Enter → Submit
+
+Print mode
+
+Validation + error messages
+
+💊 Prescriptions
+
+Active & past prescriptions
+
+Add new prescription modal
+
+Dummy medication data
+
+💬 Messages
+
+Inbox view
+
+Left sidebar → conversations
+
+Chat window
+
+Chat bubbles
+
+Scrollable area
+
+Message input
+
+🛠 Settings
+
+Profile update
+
+Notifications toggle
+
+Password change
+
+Billing placeholder section
+
+🔐 Login Page
+
+Email + password
+
+Forgot password
+
+Fully responsive and centered
+
+Error states
+
+🧱 Tech Stack
+Frontend
+
+React
+
+TypeScript
+
+React Router
+
+Tailwind CSS
+
+ShadCN UI Components
+
+Lucide Icons
+
+Development Tools
+
+Vite
+
+ESLint
+
+Prettier
+
+LocalStorage for persistent drafts
+
+📊 Data Layer
+
+Fake/sample data provided for:
+
+Patients
+
+Appointments
+
+Consultation history
+
+Prescriptions
+
+Messages
+
+All stored in /src/data/*.
+
+🔍 SEO
+
+Every page includes:
+
+useEffect(() => {
+  document.title = "Page Name | Doctor Portal";
+}, []);
+
+⚙️ Installation & Setup
+1️⃣ Clone Repo
+git clone https://github.com/your-repo-name.git
+cd your-repo-name
+
+2️⃣ Install Dependencies
+npm install
+
+3️⃣ Run Project
 npm run dev
-```
 
-**Edit a file directly in GitHub**
+4️⃣ Build
+npm run build
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+🚀 Deployment (Vercel)
+npm run build
+vercel
 
-**Use GitHub Codespaces**
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+After deployment, add the final link to README.
 
-## What technologies are used for this project?
+🖼 Screenshots
 
-This project is built with:
+Add the following (required for submission):
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+Dashboard
 
-## How can I deploy this project?
+Appointments
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+Appointment Detail
 
-## Can I connect a custom domain to my Lovable project?
+Patients
 
-Yes, you can!
+Patient Profile
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+Consultation
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+Prescriptions
+
+Messages
+
+Settings
+
+Login
+
+(You can add them by uploading PNGs into /screenshots folder.)
+
+📌 Assignment Requirements – All Completed
+
+✔ 10 pages
+✔ Responsive UI
+✔ Clean code
+✔ Figma-style design
+✔ SEO optimized
+✔ No backend required
+✔ LocalStorage for drafts
+✔ Proper routing
+✔ Popups, filters, tables
+✔ Accessibility / ARIA
+✔ Deployment ready
+
+🙌 Thank You
+
+This project showcases strong skills in:
+
+UI/UX
+
+Frontend architecture
+
+Component design
+
+State management
+
+Healthcare UI design patterns
+
+Code quality + TypeScript best practices
