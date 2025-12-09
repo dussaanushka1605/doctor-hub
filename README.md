@@ -1,14 +1,25 @@
 📘 Doctor Portal – Frontend Assignment
+A fully responsive, modern, and feature-rich Doctor Portal built using React + TypeScript + TailwindCSS + ShadCN UI, based on the provided Figma design and assignment requirements.
 
-A fully responsive, modern, and feature-rich Doctor Portal built using React + TypeScript + Tailwind + ShadCN UI, based on the provided Figma design and assignment requirements.
-
-This project implements all 10 required pages, uses a clean component architecture, includes dummy medical data, supports navigation, modals, SEO titles, and offers a polished UI/UX suitable for real-world healthcare applications.
+This project implements all 10 required pages, follows a clean component architecture, uses well-structured dummy medical data, includes modals and filters, SEO page titles, responsive layouts, and delivers a polished real-world healthcare UI/UX.
 
 🚀 Live Demo
+👉 https://doctor-s-hub-main-dpxmtxbt6.vercel.app
 
-(Replace with your deployed Vercel link)
+🧠 Project Idea & Approach
+Idea
+I selected the Doctor Portal from the assignment options.
+The objective was to build a complete doctor-facing dashboard with essential pages such as patient management, appointment workflow, consultation notes, messaging, and prescriptions.
 
-👉 https://your-project.vercel.app
+Approach
+Planned and designed 10 core pages based on the Figma flow.
+Built reusable UI components (cards, tables, sidebar, topbar, buttons, modals).
+Implemented clean routing with React Router.
+Added mock data for patients, appointments, consultations, and messages.
+Ensured responsiveness using Tailwind breakpoints.
+Added SEO with document.title for every page.
+Used LocalStorage for consultation draft saving.
+Deployed the project on Vercel.
 
 📂 Repository Structure
 src/
@@ -43,7 +54,6 @@ src/
 
 🧩 Features Implemented
 ✔ All 10 required pages
-
 Login
 Dashboard
 Appointments
@@ -59,145 +69,87 @@ Settings
 🏥 Dashboard
 Today’s appointments
 Patient statistics
-Earnings card
+Earnings summary
 Quick actions
-
-Fully responsive design
+Fully responsive layout
 
 📅 Appointments & Details
-
-List + search + filter
-
-Status badges (Upcoming, Completed, In Progress)
-
+Appointment list with search and filters
+Status badges (Upcoming / Completed / In Progress)
 Appointment detail panel
-
-Patient info + history
+Patient history integration
 
 👤 Patient Profile
-
-Demographics
-
-Medical history
-
-Allergies, conditions
-
-Appointment history
-
+Demographics & contact details
+Allergies, conditions, medical history
+Appointment records
 Documents section
+Tabbed navigation (Overview / Appointments / Documents)
 
-Tabs: Overview / Appointments / Documents
-
-📝 Consultation Page (Advanced)
-
-Fully implemented SOAP notes
-
-Vitals input (BP, HR, Temp, etc.)
-
+📝 Consultation (Advanced Page)
+Full SOAP notes implementation
+Vitals (BP, HR, Temp, etc.)
 Prescription creation modal
-
-Save Draft → localStorage
-
-Restore Draft → auto load
-
-Submit Consultation
-
-Keyboard shortcuts
-
-Ctrl/Cmd + S → Save Draft
-
-Ctrl/Cmd + Enter → Submit
-
-Print mode
-
-Validation + error messages
+Save Draft → stored in LocalStorage
+Restore Draft → auto-loading
+Submit consultation
+Keyboard shortcuts:
+  Ctrl/Cmd + S → Save Draft
+  Ctrl/Cmd + Enter → Submit
+Print-friendly mode
+Inline validation + error states
 
 💊 Prescriptions
-
-Active & past prescriptions
-
+Active & previous prescriptions
 Add new prescription modal
-
-Dummy medication data
+Dummy medication list
 
 💬 Messages
-
-Inbox view
-
-Left sidebar → conversations
-
-Chat window
-
+Inbox-style UI
+Left conversation list
+Main chat window
 Chat bubbles
-
-Scrollable area
-
-Message input
+Scrollable message area
 
 🛠 Settings
-
-Profile update
-
-Notifications toggle
-
+Profile edit
+Notification preferences
 Password change
-
-Billing placeholder section
+Billing placeholder
 
 🔐 Login Page
-
 Email + password
-
 Forgot password
-
-Fully responsive and centered
-
-Error states
+Fully responsive
+Error handling
 
 🧱 Tech Stack
 Frontend
-
 React
-
 TypeScript
-
 React Router
-
-Tailwind CSS
-
-ShadCN UI Components
-
+TailwindCSS
+ShadCN UI
 Lucide Icons
 
 Development Tools
-
 Vite
-
 ESLint
-
 Prettier
-
-LocalStorage for persistent drafts
+LocalStorage for draft persistence
 
 📊 Data Layer
-
-Fake/sample data provided for:
-
+Mock data for:
 Patients
-
 Appointments
-
-Consultation history
-
+Consultation notes
 Prescriptions
-
 Messages
-
-All stored in /src/data/*.
+Stored in /src/data/ for easy access and reusability.
 
 🔍 SEO
 
-Every page includes:
+All pages include:
 
 useEffect(() => {
   document.title = "Page Name | Doctor Portal";
@@ -205,8 +157,8 @@ useEffect(() => {
 
 ⚙️ Installation & Setup
 1️⃣ Clone Repo
-git clone https://github.com/your-repo-name.git
-cd your-repo-name
+git clone https://github.com/dussaanushka1605/doctor-hub.git
+cd doctor-hub
 
 2️⃣ Install Dependencies
 npm install
@@ -214,7 +166,7 @@ npm install
 3️⃣ Run Project
 npm run dev
 
-4️⃣ Build
+4️⃣ Build for Production
 npm run build
 
 🚀 Deployment (Vercel)
@@ -222,11 +174,17 @@ npm run build
 vercel
 
 
-After deployment, add the final link to README.
+The project is deployed at:
+👉 https://doctor-s-hub-main-dpxmtxbt6.vercel.app
 
-🖼 Screenshots
+🖼 Screenshots (Optional)
 
-Add the following (required for submission):
+You can add screenshots under:
+
+/screenshots
+
+
+Recommended screenshots:
 
 Dashboard
 
@@ -248,9 +206,7 @@ Settings
 
 Login
 
-(You can add them by uploading PNGs into /screenshots folder.)
-
-📌 Assignment Requirements – All Completed
+📌 Assignment Requirements – Completed
 
 ✔ 10 pages
 ✔ Responsive UI
@@ -260,22 +216,17 @@ Login
 ✔ No backend required
 ✔ LocalStorage for drafts
 ✔ Proper routing
-✔ Popups, filters, tables
-✔ Accessibility / ARIA
-✔ Deployment ready
+✔ Popups, filters, modals
+✔ Accessibility (ARIA labels)
+✔ Deployment completed
 
 🙌 Thank You
 
-This project showcases strong skills in:
-
-UI/UX
-
+This project demonstrates strong skills in:
+UI/UX development
 Frontend architecture
-
-Component design
-
+Component-based design
 State management
-
-Healthcare UI design patterns
-
-Code quality + TypeScript best practices
+Healthcare dashboard patterns
+TypeScript best practices
+Clean, scalable code
